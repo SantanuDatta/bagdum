@@ -1,0 +1,645 @@
+/* ========================
+   -CSS Code Structure
+    1. Global CSS
+    2. Typography
+    3. Header Section
+    4. Core Service Section
+    5. Stats Section
+    6. Portfolio Section
+    7. Service Section
+    8. Client Section
+    9. Team Section
+    10. Join Us Section
+    11. Footer Section
+========================== */
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+/*1.0 Global Css Start*/
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+h4{
+    font-family: 'PT Sans', sans-serif;
+}
+/*1.0 Global Css End*/
+
+
+/*3.0 Header Section Start*/
+
+.navbar{
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.navbar-brand{
+    width: 40%;
+    text-align: center;
+}
+
+.navbar-nav{
+    text-align: center;
+    width: 70%;
+}
+
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    padding: 6px 12px;
+    font-size: 25px;
+}
+
+.navbar-light .navbar-toggler:hover{
+    color: #ffda00;
+    border-color: #ffda00;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+.navbar-light .navbar-toggler:focus{
+    color: #ffda00;
+    border-color: #ffda00;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #ffda00;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+.navbar-light .navbar-nav .nav-link:focus{
+    color: #ffda00;
+    border-bottom: 2px solid #ffda00;
+}
+
+.cover-container{
+    padding: 20px 0px;
+    border-radius: 0;
+    width: 100%;
+    color: #fff;
+    padding-top: 1rem;
+    z-index: 1;
+    position: relative;
+    bottom: 10%;
+}
+
+
+.fa-angle-double-left{
+    font-size: 40px;
+    color: #fff;
+}
+
+.fa-angle-double-left:hover{
+    color: #ffda00;
+}
+
+.fa-angle-double-right{
+    font-size: 40px;
+    color: #fff;
+}
+
+.fa-angle-double-right:hover{
+    color: #ffda00;
+}
+
+.cover .col-lg-12{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*3.0 Header Section End*/
+
+/*4.0 Core Service Section Start*/
+
+.core-service h4{
+    text-align: center;
+    margin: 20px auto 20px;
+}
+
+.core-service img{
+    display: block;
+    margin: 20px auto 40px;
+    width: 85%;
+}
+/*4.0 Core Service Section End*/
+
+
+/*5.0 Stats Section Start*/
+
+.stats{
+    background:url(../img/Stats.png) no-repeat;
+    background-size: cover;
+    min-height: 20rem;
+    padding: 20px 0px;
+}
+/*5.0 Stats Section End*/
+
+
+/*6.0 Portfolio Section Start*/
+
+.portfolio{
+    padding: 40px 0px;
+}
+
+.portfolio h4{
+    text-align: center;
+    margin: 0px auto 20px;
+    font-weight: 700;
+}
+
+.portfolio p{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.portfolio img{
+    margin: 20px 0px;
+}
+
+.button-group{
+    text-align: center;
+    margin: 20px auto 40px;
+}
+
+.portfolio .btn{
+    background-color: #fff;
+    border: 2px solid #ffda00;
+    border-radius: 0px;
+    padding: 2px 20px;
+}
+
+.portfolio .btn:hover{
+    background-color: #ffda00;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.portfolio .btn:focus{
+    background-color: #ffda00;
+    color: #fff;
+}
+
+.portfolio .col-lg-2{
+    padding: 0px;
+    height: 10rem;
+    margin: 40px auto;
+}
+
+.portfolio .col-lg-5{
+    padding: 0px;
+    margin: 40px auto;
+}
+
+.project-item{
+    position: relative;
+}
+
+
+.project-item-hover{
+    position: absolute;
+    width: 92%;
+    height: 88%;
+    background-color: rgba(231,202,27,0.8);
+    top: 6%;
+    left: 4%;
+    z-index: -1;
+    transform: scale(0);
+}
+
+.project-item:hover .project-item-hover{
+    z-index: 1;
+    transition: ease 0.5s all;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.project-item-hover h4{
+    margin: 60px auto 0px;
+}
+
+.project-item-hover .btn{
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    padding: 5px 30px;
+    font-weight: 700;
+}
+    
+/*6.0 Portfolio Section End*/
+
+/*7.0 Service Section Start*/
+
+.service{
+    padding: 40px 0px;
+}
+
+.service h4{
+    text-align: center;
+    font-weight: 700;
+    margin: 0px auto 20px;
+}
+
+.service p{
+    text-align: center;
+    margin: 20px auto 40px;
+}
+
+.service img{
+    display: block;
+    margin: 20px auto 0px;
+    z-index: 1;
+}
+
+.service a{
+    text-align: center;
+    color: #ffda00;
+    z-index: 2;
+    position: absolute;
+    left: 40%;
+    bottom: 20%;
+    text-decoration: underline;
+}
+
+.service a:hover{
+    color: #333;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.service a:focus{
+    color: #333;
+}
+
+/*7.0 Service Section End*/
+
+/*8.0 Client Section Start*/
+
+.client{
+    background: url(../img/client-bg.png) no-repeat;
+    background-size: cover;
+    padding: 40px 0px;
+}
+
+.client h4{
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.client p{
+    color: #fff;
+    text-align: center;
+    margin: 20px auto 40px;
+}
+
+.client img{
+    margin: 20px auto 60px;
+}
+
+.client li{
+    width: 10px;
+    height: 10px;
+    color: #fff;
+}
+
+.carousel-indicators .active {
+    background-color: #ffda00;
+}
+
+/*8.0 Client Section End*/
+
+/*9.0 Team Section Start*/
+
+.team{
+    padding: 40px 0px;
+}
+
+.team h4{
+    text-align: center;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.team p{
+    text-align: center;
+}
+
+.team img{
+    width: 70%;
+    display: block;
+    margin: 0px auto;
+}
+
+.team img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.team h6{
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0px;
+    width: 70%;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+
+.team-bio{
+    display: block;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 0px 0px 20px;
+    width: 70%;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;  
+}
+
+.icon-group{
+    display: block;
+    margin: 0 auto;
+    text-align: center;  
+    padding: 10px 10px;
+    width: 70%;
+    border: 1px solid #f1f1f1;
+}
+
+.fa-facebook-f{
+    color: #f1f1f1;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+}
+
+.fa-facebook-f:hover{
+    color: #fff;
+    background-color: #ffda00;
+    border: 0px;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.fa-facebook-f:focus{
+    color: #fff;
+    background-color: #ffda00;
+}
+
+.fa-twitter{
+    color: #f1f1f1;
+    padding: 5px 5px;
+    margin: 0px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+}
+
+.fa-twitter:hover{
+    color: #fff;
+    background-color: #ffda00;
+    border: 0px;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.fa-twitter:focus{
+    color: #fff;
+    background-color: #ffda00;
+}
+
+.fa-linkedin-in{
+    color: #f1f1f1;
+    padding: 5px 6px;
+    margin: 0px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+}
+
+.fa-linkedin-in:hover{
+    color: #fff;
+    background-color: #ffda00;
+    border: 0px;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.fa-linkedin-in:focus{
+    color: #fff;
+    background-color: #ffda00;
+}
+
+/*9.0 Team Section End*/
+
+/*10.0 Join Us Section Start*/
+
+.join-us{
+    background: url(../img/join-us-bg.png) no-repeat;
+    background-size: cover;
+    padding: 40px 0px;
+}
+
+.join-us h4{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.join-us p{
+    text-align: center;
+    color: #fff;
+    margin: 20px auto;
+}
+
+.join-us form{
+    display: block;
+    margin: 0 auto;
+    border: 0px;
+}
+
+.form-inline .form-control{
+    border-radius: 0px;
+    background-color: transparent;
+    padding: 5px 20px;
+}
+
+.join-us .btn{
+    padding: 5px 25px;
+    border-radius: 0px;
+    background-color: #ffda00;
+}
+
+.join-us .btn:hover{
+    color: #fff;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.join-us .btn:focus{
+    color: #fff;
+}
+/*10.0 Join Us Section End*/
+
+/*11.0 Footer Section Start*/
+
+footer{
+    background: url(../img/footer-bg.png) no-repeat;
+    background-size: cover;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer a{
+    color: #ffda00;
+}
+/*11.0 Footer Section End*/
+
+
+/*Media Query for Mobile Device 0px to 550px*/
+
+@media screen and (max-width: 550px) {
+    .navbar{
+        background-color: #333;
+    }
+    
+    .navbar-nav{
+        text-align: right;
+    }
+    
+    .project-item-hover{
+        width: 92%;
+        height: 90%;
+        top: 5%;
+        left: 4%;
+    }
+    
+    .stats{
+        min-height: 5rem;
+        padding: 37px 0px;
+    }
+    
+    .portfolio .btn{
+        margin: 10px auto;
+    }
+    
+    .service a{
+        left: 40%;
+    }
+    
+    .client{
+        padding: 40px 20px;
+    }
+    
+    .icon-group{
+        margin: 0 auto 20px;
+    }
+    
+    .join-us .navbar{
+        background-color: transparent;
+    }
+    
+    .join-us .btn{
+        display: block;
+        margin: 20px auto;
+    }
+}
+/*Media Query for Tablet Device 550px to 990px*/
+@media (min-width: 550px) and (max-width: 990px) {
+    .navbar{
+        background-color: #333;
+    }
+    
+    .navbar-nav{
+        text-align: right;
+    }
+    
+    .core-service .col-lg-4{
+        width: 50%;
+    }
+    
+    .stats{
+        min-height: 13rem;
+    }
+    
+    .project-item-hover{
+        width: 92%;
+        height: 88%;
+    }
+    
+    .portfolio .col-lg-4{
+        width: 50%;
+    }
+    
+    .service .col-lg-4{
+        width: 50%;
+    }
+    
+    .service a{
+        left: 40%;
+    }
+    
+    .team .col-lg-4{
+        width: 33.33%;
+    }
+    
+    .client{
+        padding: 40px 20px;
+    }
+    
+    .fa-facebook-f{
+        font-size: 15px;
+    }
+    
+    .fa-twitter{
+        font-size: 15px;
+    }
+    
+    .fa-linkedin-in{
+        font-size: 15px;
+    }
+    
+    .icon-group{
+        margin: 0 auto;
+    }
+    
+    .join-us .navbar{
+        background-color: transparent;
+    }
+    
+}
